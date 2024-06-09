@@ -142,6 +142,65 @@ body {
     cursor: pointer;
 }
 
+.appointment-section {
+    display: flex;
+    height: 100vh;
+}
+
+.appointment-section .image-container {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+}
+
+.appointment-section .form-container {
+    flex: 1;
+    background-color: #007BFF; /* Blue background color */
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.appointment-section .form-container h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.appointment-section .form-group {
+    margin-bottom: 15px;
+}
+
+.appointment-section .form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.appointment-section .form-group input,
+.appointment-section .form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.appointment-section button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #0056b3;
+    color: white;
+    cursor: pointer;
+}
+
+.appointment-section button:hover {
+    background-color: #003f7f;
+}
+
 .logo {
     max-width: 8%;
 }

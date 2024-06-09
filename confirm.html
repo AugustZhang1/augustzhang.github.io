@@ -45,6 +45,7 @@
             <h1>Booking Confirmation</h1>
             <p><span id="name">Name:</span> </p>
             <p><span id="email">Email:</span> </p>
+            <p><span id="number-of-people">Number of People:</span> </p>
             <p><span id="dental-service">Service:</span> </p>
             <p><span id="meeting-style">Meeting Style:</span> </p>
             <p><span id="phone">Phone Number:</span> </p>
@@ -59,6 +60,7 @@
             const bookingData = JSON.parse(localStorage.getItem('bookingData'));
             
             if (bookingData) {
+                document.getElementById('number-of-people').innerHTML = `<span>Number of People:</span> ${bookingData.numberOfPeople}`;
                 document.getElementById('name').innerHTML = `<span>Name:</span> ${bookingData.name}`;
                 document.getElementById('email').innerHTML = `<span>Email:</span> ${bookingData.email}`;
                 document.getElementById('dental-service').innerHTML = `<span>Service:</span> ${bookingData.service}`;
